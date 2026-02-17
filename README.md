@@ -1,9 +1,4 @@
-<p align="center">
-  <a href="https://osomstudio.com">
-    <img alt="Juniper" src="https://5924544.fs1.hubspotusercontent-na1.net/hubfs/5924544/juniper/398672602-juniper-logo-01.png" height="300">
-  </a>
-</p>
-
+This repository is a fork of boilerplate <a href="https://github.com/osomstudio/juniper">
 
 <p align="center">
   <strong>Juniper - WordPress starter boilerplate + theme</strong>
