@@ -26,25 +26,34 @@ With this approach you can create theme code with logic files separated from fro
 - Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
 - PHPCS & PHPCBF with WordPress-Extra standard installed
 
-## Installation
+## Installation with ddev
 
-1. Create local database as you would do for normal WP instance
-2. Map project main catalogue to domain on your localhost
-3. Start a new project:
+1. Clone the repository
    ```sh
-   $ bash start.sh
+   git clone https://github.com/hernan930308/based-on-juniper.git
+   ```
+2. Create a virtual project with ddev
+   ```sh
+   ddev config --project-type=wordpress --docroot=web
+   ```
+4. Start a new project:
+   ```sh
+   bash start.sh
    ```
    and follow the instructions in the console.
    Type in details from step 1 and 2. .env file will
-   be crated for you (all DB and site details sits there)
-4. Fill correct domain details in .htaccess in main catalogue.
-5. Check if /web/ directory has .htaccess file with default WP entries.
-6. Run 
+   be crated for you (all DB and site details sits there).
+
+   Check npm packages instalation on theme folder.
+   
+6. Fill correct domain details in .htaccess in main catalogue.
+7. Check if /web/ directory has .htaccess file with default WP entries.
+8. Run 
    ```sh
    $ bash work.sh
    ```
    in main project directory
-7. Start coding your theme in /web/app/themes/juniper-theme/ :)
+9. Start coding your theme in /web/app/themes/juniper-theme/ :)
 
 ## Composer dependencies
 
