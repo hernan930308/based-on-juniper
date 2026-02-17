@@ -53,7 +53,7 @@ echo >> .env;
 echo "# ENV" >> .env;
 echo "WP_ENV=development" >> .env
 read -p "Enter local domain name (eg. wordpress.local): " domain
-echo "WP_HOME=http://$domain" >> .env;
+echo 'WP_HOME=${DDEV_PRIMARY_URL}' >> .env;
 echo 'WP_SITEURL=${WP_HOME}/wp' >> .env;
 read -p "Enter ACF PRO KEY: " acfprokey
 echo "ACF_PRO_KEY=$acfprokey" >> .env

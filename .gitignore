@@ -37,3 +37,13 @@ web/app/w3tc-config
 web-exppress
 
 .htaccess
+
+## ddev
+.ddev
+
+.github/copilot-instructions.md
+
+# Languages
+web/app/languages/*
+
+CLAUDE.md
