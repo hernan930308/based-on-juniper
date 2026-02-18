@@ -24,8 +24,17 @@ With this approach you can create theme code with logic files separated from fro
 
 - PHP >= 8.1
 - Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+- php-xml
 - PHPCS & PHPCBF with WordPress-Extra standard installed
 
+## install some prerequisities
+```sh
+Linux:
+sudo apt install composer php-xml
+```
+```sh
+composer global require squizlabs/php_codesniffer:^3.6.0 wp-coding-standards/wpcs:^3.1
+```
 ## Installation with ddev
 
 1. Clone the repository
