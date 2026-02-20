@@ -4,12 +4,13 @@
 	"dependencies": {
 		"@barba/core": "^2.10",
 		"@barba/prefetch": "^2.2",
-		"bootstrap": "^5.3",
+		"@tailwindcss/postcss": "^4.2.0",
 		"cypress": "^15.6",
 		"gsap": "^3.13.0",
 		"imagesloaded": "^5.0",
 		"jquery": "^3.7",
-		"postcss": "^8.5"
+		"postcss": "^8.5.6",
+		"tailwindcss": "^4.2.0"
 	},
 	"devDependencies": {
 		"@parcel/transformer-sass": "^2.16",
@@ -23,8 +24,8 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "parcel watch src/css/_app.scss src/js/_app.js blocks/**/*.js blocks/**/*.scss --public-url ./ --no-source-maps",
-		"build": "parcel build src/js/_app.js src/css/_app.scss blocks/**/*.js blocks/**/*.scss --public-url ./",
+		"dev": "parcel watch src/css/_app.css src/js/_app.js blocks/**/*.js blocks/**/*.scss --public-url ./ --no-source-maps",
+		"build": "parcel build src/js/_app.js src/css/_app.css blocks/**/*.js blocks/**/*.scss --public-url ./",
 		"cypress": "./node_modules/.bin/cypress open",
 		"flint": "eslint --fix ./src/js/**/*",
 		"pretest": "eslint --ignore-path .gitignore ./src/js/**/* --fix && eslint --ignore-path .gitignore ./blocks/**/*.js --fix"
