@@ -59,7 +59,7 @@ composer global require squizlabs/php_codesniffer:^3.6.0 wp-coding-standards/wpc
 7. Check if /web/ directory has .htaccess file with default WP entries.
 8. Run 
    ```sh
-   $ bash work.sh
+   bash work.sh
    ```
    in main project directory
 9. Start coding your theme in /web/app/themes/juniper-theme/ :)
@@ -85,15 +85,15 @@ The main operations that we automate have been handled by below scripts: :
  
 1. Adding Custom Post Types - After getting the name, a CPT will be created. Its editing will of course be possible later, because this command will generate a file in the theme directory.
 ```sh
-$ wp add cpt --name="Product"
+wp add cpt --name="Product"
 ```
 2. Adding Taxonomies - Add a name of the taxonomy you want and the slug name of the posts you want it to be attached to and this command will take care of the rest
 ```sh
-$ wp add taxonomy --name="Category" --post="product"
+wp add taxonomy --name="Category" --post="product"
 ```
 3. Adding Gutenberg Blocks - This creates a custom Gutenberg block for the user utilizin the ACF Timber Blocks solution which allows us to use one .twig file with the appropriate comment to create a block. Keywords and description fields are optional
 ```sh
-$ wp add block --name="Reviews" --keywords="quote,stars" --description="Show three newest reviews"
+wp add block --name="Reviews" --keywords="quote,stars" --description="Show three newest reviews"
 ```
 
 
